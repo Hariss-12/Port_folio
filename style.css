@@ -1,7 +1,5 @@
-
-/* =========================
-   1. Global Settings
-========================= */
+```css
+/* 1. Global Settings */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +7,14 @@
 }
 
 :root {
-    --primary: #001a40;
-    --primary-dark: #000b24;
-    --primary-light: #10284a;
-    --background: #080d18;
-    --surface: #111827;
-    --text: #e5e7eb;
-    --border: #263449;
-    --accent: #6ea8ff;
+    --primary: #17365d;
+    --primary-dark: #142b49;
+    --primary-light: #25476e;
+    --background: #17263b;
+    --surface: #20334b;
+    --text: #e5edf7;
+    --border: #3b526e;
+    --accent: #8abaff;
 }
 
 html {
@@ -34,36 +32,30 @@ body {
     color: var(--text);
 }
 
-/* =========================
-   2. Marquee
-========================= */
+/* 2. Marquee */
 marquee {
     display: block;
     width: 100%;
     background: var(--primary-dark);
-    color: white;
+    color: #1dcd78;
     padding: 5px 0;
     margin: 0 0 10px;
     border-radius: 5px;
     line-height: 1.5;
 }
 
-/* =========================
-   3. Header
-========================= */
+/* 3. Header */
 header {
     width: 100%;
     background: var(--primary-dark);
     color: white;
-    padding: 14px;
-    margin: 0 0 14px;
+    padding: 12px;
+    margin: 0 0 12px;
     border: 1px solid var(--border);
     border-radius: 8px;
 }
 
-/* =========================
-   4. Navigation
-========================= */
+/* 4. Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -88,9 +80,7 @@ nav a:hover {
     color: white;
 }
 
-/* =========================
-   5. Profile Image
-========================= */
+/* 5. Profile Image */
 body > img {
     display: block;
     width: 140px;
@@ -99,12 +89,10 @@ body > img {
     object-position: center;
     border-radius: 50%;
     border: 3px solid var(--accent);
-    margin: 14px auto;
+    margin: 12px auto;
 }
 
-/* =========================
-   6. Main Heading
-========================= */
+/* 6. Main Heading */
 h1 {
     color: var(--accent);
     text-align: center;
@@ -113,39 +101,33 @@ h1 {
     margin: 10px 0;
 }
 
-/* =========================
-   7. Section Headings
-========================= */
+/* 7. Section Headings */
 h2 {
     color: var(--accent);
     font-size: 21px;
     line-height: 1.4;
-    margin: 18px 0 10px;
-    padding-bottom: 6px;
+    margin: 16px 0 8px;
+    padding-bottom: 5px;
     border-bottom: 2px solid var(--primary-light);
 }
 
-/* =========================
-   8. Paragraphs
-========================= */
+/* 8. Paragraphs */
 p {
     background: var(--surface);
     color: var(--text);
-    padding: 12px 14px;
+    padding: 10px 12px;
     margin: 0 0 10px;
     border: 1px solid var(--border);
     border-radius: 7px;
     overflow-wrap: anywhere;
 }
 
-/* =========================
-   9. Tables
-========================= */
+/* 9. Tables */
 table {
     width: 100%;
     border-collapse: collapse;
     table-layout: auto;
-    margin: 10px 0 16px;
+    margin: 8px 0 14px;
     background: var(--surface);
     color: var(--text);
 }
@@ -164,18 +146,15 @@ th {
     color: white;
 }
 
-tbody tr:hover,
-tr:hover {
+tbody tr:hover {
     background: var(--primary-light);
 }
 
-/* =========================
-   10. Skills List
-========================= */
+/* 10. Skills List */
 ul {
     background: var(--surface);
     color: var(--text);
-    padding: 12px 12px 12px 36px;
+    padding: 10px 12px 10px 36px;
     margin: 0 0 12px;
     border: 1px solid var(--border);
     border-radius: 7px;
@@ -190,9 +169,7 @@ li::marker {
     color: var(--accent);
 }
 
-/* =========================
-   11. Links
-========================= */
+/* 11. Links */
 p a {
     color: var(--accent);
     font-weight: bold;
@@ -205,31 +182,25 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* =========================
-   12. Horizontal Line
-========================= */
+/* 12. Horizontal Line */
 hr {
     border: none;
     height: 1px;
     background: var(--border);
-    margin: 16px 0;
+    margin: 14px 0;
 }
 
-/* =========================
-   13. Footer
-========================= */
+/* 13. Footer */
 body > p:last-child {
     text-align: center;
-    color: #9ca9bc;
+    color: #b4c3d6;
     background: transparent;
     border: none;
-    margin: 12px 0 0;
-    padding: 8px;
+    margin: 8px 0 0;
+    padding: 6px;
 }
 
-/* =========================
-   14. Tablet Layout
-========================= */
+/* 14. Tablet Layout */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -259,9 +230,7 @@ body > p:last-child {
     }
 }
 
-/* =========================
-   15. Mobile Layout
-========================= */
+/* 15. Mobile Layout */
 @media (max-width: 480px) {
     body {
         padding: 6px;
@@ -310,9 +279,7 @@ body > p:last-child {
     }
 }
 
-/* =========================
-   16. Accessibility
-========================= */
+/* 16. Accessibility */
 a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
@@ -326,3 +293,4 @@ a:focus-visible {
         transition: none !important;
     }
 }
+```
